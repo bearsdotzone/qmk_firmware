@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0){    
+    if (index == 0){
         if(clockwise)
         {
             tap_code16(LCTL(KC_Z));
@@ -54,6 +54,6 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom();
-    rgblight_sethsv_noeeprom(255, 255, 255);
+    rgblight_sethsv_noeeprom(250, 255, 255);
     rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
