@@ -29,17 +29,21 @@
 
 /* Uno default pinout */
 #define DIRECT_PINS { \
-    { B6 } \
+    { D0 } \
 }
 #define UNUSED_PINS
+#define ENCODERS_PAD_A { B2 }
+#define ENCODERS_PAD_B { B3 }
 
-#define RGB_DI_PIN F6
+#define ENCODER_RESOLUTION 4
+
+#define RGB_DI_PIN D1
 #ifdef RGB_DI_PIN
 #define RGBLED_NUM 1
-//   #define RGBLIGHT_HUE_STEP 32
-//   #define RGBLIGHT_SAT_STEP 32
-//   #define RGBLIGHT_VAL_STEP 32
-//   #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
+  #define RGBLIGHT_HUE_STEP 32
+  #define RGBLIGHT_SAT_STEP 32
+  #define RGBLIGHT_VAL_STEP 32
+  #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
 //   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 // /*== all animations enable ==*/
 #define RGBLIGHT_ANIMATIONS
